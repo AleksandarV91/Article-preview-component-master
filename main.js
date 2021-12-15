@@ -1,6 +1,7 @@
+const share = document.querySelector(".share-option");
 const btn = document.querySelector(".share-btn");
-const shareBox = document.querySelector(".share-box-content");
 
-btn.addEventListener("click", function () {
-  shareBox.classList.toggle("show");
+btn.addEventListener("click", () => {
+  share.classList.toggle("active");
+  btn.classList.toggle("active");
 });
